@@ -1,6 +1,6 @@
 # Spinosa
 
-_Prunus Spinosa - Prunus spinosa, called blackthorn or sloe, is a species of flowering plant in the rose family Rosaceae. It is native to Europe, western Asia, and locally in northwest Africa.[3][4] It is also locally naturalised in New Zealand, Tasmania and eastern North America._ Wikipedia.
+_Prunus Spinosa - Prunus spinosa, called blackthorn or sloe, is a species of flowering plant in the rose family Rosaceae. It is native to Europe, western Asia, and locally in northwest Africa. It is also locally naturalised in New Zealand, Tasmania and eastern North America._ - Wikipedia
 
 Spinosa is a non-intrusive network debugging library.
 
