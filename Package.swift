@@ -8,7 +8,6 @@ let package = Package(
     platforms: [
         .iOS(.v12)
     ],
-    path: "Spinosa/Sources",
     products: [
         .library(
             name: "Spinosa",
@@ -20,9 +19,11 @@ let package = Package(
     targets: [
         .target(
             name: "Spinosa",
-            dependencies: ["SnapKit"]),
+            dependencies: ["SnapKit"],
+            path: "Spinosa"),
         .testTarget(
             name: "SpinosaTests",
-            dependencies: ["Spinosa"]),
+            dependencies: ["Spinosa"],
+            path: "SpinosaTests"),
     ]
 )
