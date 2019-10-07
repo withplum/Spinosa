@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A47986272349EE2B002FE591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47986262349EE2B002FE591 /* AppDelegate.swift */; };
+		A479862D2349EE2C002FE591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A479862C2349EE2C002FE591 /* Assets.xcassets */; };
+		A47986332349EE2C002FE591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47986312349EE2C002FE591 /* LaunchScreen.storyboard */; };
+		A479863E2349EEFA002FE591 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A479863D2349EEFA002FE591 /* RootViewController.swift */; };
+		A47986452349F612002FE591 /* ExampleAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47986442349F612002FE591 /* ExampleAPIClient.swift */; };
+		A4A62009234B134B00419BBD /* Spinosa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A62008234B134B00419BBD /* Spinosa.framework */; };
+		A4A6200A234B134B00419BBD /* Spinosa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4A62008234B134B00419BBD /* Spinosa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4D18EDD234A6477003F0B64 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A4A6200A234B134B00419BBD /* Spinosa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A47986232349EE2B002FE591 /* SpinosaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinosaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47986262349EE2B002FE591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A479862C2349EE2C002FE591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A47986322349EE2C002FE591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A47986342349EE2C002FE591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A479863D2349EEFA002FE591 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A47986442349F612002FE591 /* ExampleAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAPIClient.swift; sourceTree = "<group>"; };
+		A4A62008234B134B00419BBD /* Spinosa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Spinosa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A47986202349EE2B002FE591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A62009234B134B00419BBD /* Spinosa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A479861A2349EE2B002FE591 = {
+			isa = PBXGroup;
+			children = (
+				A47986252349EE2B002FE591 /* SpinosaExample */,
+				A47986242349EE2B002FE591 /* Products */,
+				A47986402349F35B002FE591 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A47986242349EE2B002FE591 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A47986232349EE2B002FE591 /* SpinosaExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A47986252349EE2B002FE591 /* SpinosaExample */ = {
+			isa = PBXGroup;
+			children = (
+				A479863A2349EEBE002FE591 /* Source */,
+				A479863C2349EED2002FE591 /* Supporting Files */,
+			);
+			path = SpinosaExample;
+			sourceTree = "<group>";
+		};
+		A479863A2349EEBE002FE591 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A47986262349EE2B002FE591 /* AppDelegate.swift */,
+				A47986432349F59B002FE591 /* API */,
+				A479863B2349EEC6002FE591 /* View Controllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A479863B2349EEC6002FE591 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A479863D2349EEFA002FE591 /* RootViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A479863C2349EED2002FE591 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A479862C2349EE2C002FE591 /* Assets.xcassets */,
+				A47986312349EE2C002FE591 /* LaunchScreen.storyboard */,
+				A47986342349EE2C002FE591 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A47986402349F35B002FE591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4A62008234B134B00419BBD /* Spinosa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A47986432349F59B002FE591 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A47986442349F612002FE591 /* ExampleAPIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A47986222349EE2B002FE591 /* SpinosaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47986372349EE2C002FE591 /* Build configuration list for PBXNativeTarget "SpinosaExample" */;
+			buildPhases = (
+				A479861F2349EE2B002FE591 /* Sources */,
+				A47986202349EE2B002FE591 /* Frameworks */,
+				A47986212349EE2B002FE591 /* Resources */,
+				A4D18EDD234A6477003F0B64 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpinosaExample;
+			packageProductDependencies = (
+			);
+			productName = SpinosaExample;
+			productReference = A47986232349EE2B002FE591 /* SpinosaExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A479861B2349EE2B002FE591 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Plum Fintech Limited";
+				TargetAttributes = {
+					A47986222349EE2B002FE591 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = A479861E2349EE2B002FE591 /* Build configuration list for PBXProject "SpinosaExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A479861A2349EE2B002FE591;
+			packageReferences = (
+				A4D18F10234A65A1003F0B64 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = A47986242349EE2B002FE591 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A47986222349EE2B002FE591 /* SpinosaExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A47986212349EE2B002FE591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47986332349EE2C002FE591 /* LaunchScreen.storyboard in Resources */,
+				A479862D2349EE2C002FE591 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A479861F2349EE2B002FE591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47986452349F612002FE591 /* ExampleAPIClient.swift in Sources */,
+				A479863E2349EEFA002FE591 /* RootViewController.swift in Sources */,
+				A47986272349EE2B002FE591 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A47986312349EE2C002FE591 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47986322349EE2C002FE591 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A47986352349EE2C002FE591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A47986362349EE2C002FE591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A47986382349EE2C002FE591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = URBNY2UJHN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SpinosaExample/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plum.SpinosaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A47986392349EE2C002FE591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = URBNY2UJHN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SpinosaExample/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plum.SpinosaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A479861E2349EE2B002FE591 /* Build configuration list for PBXProject "SpinosaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47986352349EE2C002FE591 /* Debug */,
+				A47986362349EE2C002FE591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47986372349EE2C002FE591 /* Build configuration list for PBXNativeTarget "SpinosaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47986382349EE2C002FE591 /* Debug */,
+				A47986392349EE2C002FE591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4D18F10234A65A1003F0B64 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = A479861B2349EE2B002FE591 /* Project object */;
+}
