@@ -8,6 +8,7 @@ let package = Package(
     platforms: [
         .iOS(.v12)
     ],
+    path: "Spinosa/Sources",
     products: [
         .library(
             name: "Spinosa",
