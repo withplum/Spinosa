@@ -107,6 +107,10 @@ internal final class Task
         return String(data: data, encoding: .utf8)
     }
     
+    var timestampFormatted: String {
+        TimestampFormatter.string(from: timestamp)
+    }
+
     // Private
     private let timestamp = Date()
     private let maskedHeaders: [String]
