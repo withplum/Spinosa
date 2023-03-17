@@ -108,7 +108,7 @@ internal final class Task
     }
     
     var timestampFormatted: String {
-        TimestampFormatter.shared.string(from: timestamp)
+        TimestampFormatter.string(from: timestamp)
     }
 
     // Private
