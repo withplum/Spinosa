@@ -39,13 +39,15 @@ internal final class CompletedTaskTableViewCell: UITableViewCell, Reusable
     
     // MARK: Data
     
-    private func reloadData()
-    {
-        self.textLabel?.text = self.task?.requestDescription
+    private func reloadData() {
+        textLabel?.text = task?.requestDescription
         
-        guard let statusCode = self.task?.statusCode else { return }
-        
-        self.detailTextLabel?.text = String(statusCode)
-        self.detailTextLabel?.textColor = self.task?.isSuccess == true ? UIColor.systemGreen : UIColor.systemRed
+        guard let statusCode = task?.statusCode, let time = task?.timestampFormatted else { return }
+        let subtitle = "\(statusCode) - \(time)"
+        let color = task?.isSuccess == true ? UIColor.systemGreen : UIColor.systemRed
+        let range = (subtitle as NSString).range(of: "\(statusCode)")
+        let styledText = NSMutableAttributedString(string: subtitle)
+        styledText.addAttribute(.foregroundColor, value: color, range: range)
+        detailTextLabel?.attributedText = styledText
     }
 }

@@ -30,6 +30,7 @@
 		A4A61FEC234B118300419BBD /* CompletedTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A61FD8234B118300419BBD /* CompletedTaskTableViewCell.swift */; };
 		A4A61FEF234B11B400419BBD /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A61FEE234B11B400419BBD /* TaskTests.swift */; };
 		A4A61FF5234B129900419BBD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A4A61FF4234B129900419BBD /* SnapKit */; };
+		C797B95A29C4BE9F00390695 /* TimestampFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C797B95929C4BE9F00390695 /* TimestampFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		A4A61FEE234B11B400419BBD /* TaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 		A4A6200D234B13C100419BBD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A4A6200F234B13D200419BBD /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		C797B95929C4BE9F00390695 /* TimestampFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				A4A61FD0234B118300419BBD /* TaskMetrics.swift */,
 				A4A61FD1234B118300419BBD /* TaskData.swift */,
 				A4A61FD2234B118300419BBD /* Task.swift */,
+				C797B95929C4BE9F00390695 /* TimestampFormatter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				A4A61FDD234B118300419BBD /* TaskListTableViewController.swift in Sources */,
 				A4A61FE7234B118300419BBD /* Task.swift in Sources */,
 				A4A61FDB234B118300419BBD /* TaskDataViewController.swift in Sources */,
+				C797B95A29C4BE9F00390695 /* TimestampFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
