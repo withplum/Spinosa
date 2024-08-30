@@ -15,7 +15,9 @@ internal final class TaskDataViewController: UIViewController
     private let textView: UITextView = {
         let view = UITextView()
         view.alwaysBounceVertical = true
-
+        if #available(iOS 13.0, *) {
+            view.font = .monospacedSystemFont(ofSize: 11, weight: .regular)
+        }
         return view
     }()
 
