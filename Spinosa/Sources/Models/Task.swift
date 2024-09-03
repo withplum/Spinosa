@@ -104,7 +104,14 @@ internal final class Task
     
     internal var formattedResponseData: String? {
         guard let data = self.responseData else { return nil }
-        return String(data: data, encoding: .utf8)
+        guard responseHeaders["Content-Type"] == "application/json",
+              let jsonObject = try? JSONSerialization.jsonObject(with: data),
+              let prettifiedData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted)
+        else {
+            return String(data: data, encoding: .utf8)
+        }
+
+        return String(data: prettifiedData, encoding: .utf8)
     }
     
     var timestampFormatted: String {
